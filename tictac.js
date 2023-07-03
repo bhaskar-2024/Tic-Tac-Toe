@@ -20,11 +20,12 @@ let boxes = document.querySelectorAll('.boxes');
 
 for(let box of boxes)
 {
-    box.addEventListener('click' , () => {
+    box.addEventListener('click' ,function (e) {
         console.log(turn);
         console.log("working!!!");
         audioTurn.play();
         box.innerText = turn;
+        box.style.pointerEvents = 'none';
         let iswin = winning();
         if(iswin === 0)
         { 
@@ -43,6 +44,7 @@ for(let box of boxes)
         {
             drawbox.style.display = "flex";
         }
+        
     })
 }
 
@@ -72,12 +74,14 @@ function reset()
     for(let box of boxes)
     {
         box.innerText = "";
+        box.style.pointerEvents = 'auto';
     }
     drawbox.style.display = 'none';
     winbox.style.display = 'none';
     turn = "X";
     document.querySelector('.turntext').innerText = turn;
     count = 1;
+    
 
 }
 

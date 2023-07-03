@@ -116,3 +116,8 @@ nav ul{
         grid-template-columns: repeat(3, 20vw);
     }
 }
+
+.cancelClick
+{
+    pointer-events: none;
+}
