@@ -1,0 +1,265 @@
+body
+{
+    margin: 0;
+    padding: 50px;
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    
+
+}
+
+
+.container
+{
+   display: grid;
+   grid-template-columns: repeat(3 , 10vw);
+   grid-template-rows: repeat(3 , 10vw);
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.boxes{
+    border: 2px solid white;
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2vw;
+    color: white;
+    text-shadow:
+    0 0 2px #fff,
+    0 0 8px #fff,
+    0 0 10px #fff,
+    0 0 8px #0ff,
+    0 0 8px rgb(164, 213, 213),
+    0 0 15px #0ff,
+    0 0 15px #0ff,
+    0 0 15px #0ff;
+}
+.boxes:hover{
+    background-color: rgb(12, 89, 144);
+    cursor: pointer;
+}
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+ .gameContainer
+ {
+    display: flex;
+    justify-content: space-around;
+    
+ }
+ h2
+ {
+    font-size: 3.5vw;
+ }
+ /* .turntext
+ {
+    font-size: 4vw;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 10vw;
+    color:rgb(255, 255, 255);
+ } */
+ .win , .draw
+{
+    border: 2px solid black;
+    width: 50vw;
+    height: 28vw;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("win.jpg");
+     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+ 
+   
+}
+.win span , .win h1 , .draw span , .draw h1{
+    font-size: 3vw;
+}
+button{
+    width: 8vw;
+    height: 4vw;
+    font-size: 1.5vw;
+    border-radius: 10%;
+
+}
+.container
+{
+    border: 2px solid white;
+    padding: 2vw;
+    box-shadow: rgba(210, 210, 220, 0.979) 0px 50px 100px -20px, rgb(238, 230, 230) 0px 30px 60px -30px, rgb(97, 119, 140) 0px -2px 6px 0px inset;
+}
+.playerinfo
+{
+    display: grid;
+    grid-template-columns: repeat(2 , 10vw);
+    grid-template-rows: repeat(2 , 4vw);
+    
+}
+.info
+{
+    font-size: 1.8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid white;
+    color: white;
+    
+}
+.title
+{
+    font-size: 5vw;
+    font-family: 'Dancing Script', cursive;
+   background-color: whitesmoke;
+   margin-top: 0;
+   padding: 1vw;
+   text-shadow :0px 0px 2px #ef3b92, 
+   1px 1px #ef3b92, 2px 2px 2px #ef3b92,
+   -1px -1px 2px #ef3b92;
+   letter-spacing: 0.4vw;
+
+}
+.player
+{
+    width: 40vw;
+    height: 35vw;
+    border: 6px solid whitesmoke;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    text-align: center;
+
+}
+.turnchange span
+{
+    display: block;
+    font-size: 3vw;
+    font-family: cursive;
+    color: #fff;
+    text-shadow:  0px 0px 2px #ef3b92, 
+    1px 1px #ef3b92, 2px 2px 2px #ef3b92,
+    -1px -1px 2px #ef3b92;;
+}
+.turnchange
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* CSS for buttons copied */
+
+.button-30 {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 3vw;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 1.2vw;
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+@media  (max-width : 800px)
+{
+    .gameContainer{
+        flex-wrap: wrap;
+        margin : 0px;
+        padding: 0px;
+    }
+    .player{
+        border : 2px solid white;
+        margin-top: 1vh;
+    }
+    .info{
+        border: 2px solid white;
+    }
+    body
+    {   
+        background-size:auto ;
+        background-repeat: no-repeat;
+    }
+    .container
+    {
+        width: 70vw;
+        height:70vw;
+        grid-template-columns: repeat(3 , 22vw);
+        grid-template-rows: repeat(3 , 22vw);
+        
+        
+    }
+    .playerinfo{
+        grid-template-columns: repeat(2 , 20vw);
+    grid-template-rows: repeat(2 , 10vw);
+    margin-bottom: 2vw;
+   
+    }
+    .player{
+        height: 55vw;
+        width: 60vw;
+    }
+    .button-30
+    {   margin-top: 1.5vw;
+        width: 18vw;
+        height: 8vw;
+        font-size: 2.5vw;
+    }
+
+}

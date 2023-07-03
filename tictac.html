@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tictac.css">
+    <title>Tic-Tac-Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="gameContainer">
+       
+        <div class="container">
+           
+            <div class="boxes bt-0 bl-0"><span class="boxtext"></span></div>
+            <div class="boxes bt-0"><span class="boxtext"></span></div>
+            <div class="boxes bt-0 br-0"><span class="boxtext"></span></div>
+            <div class="boxes bl-0"><span class="boxtext"></span></div>
+            <div class="boxes"><span class="boxtext"></span></div>
+            <div class="boxes br-0"><span class="boxtext"></span></div>
+            <div class="boxes bl-0 bb-0"><span class="boxtext"></span></div>
+            <div class="boxes bb-0"><span class="boxtext"></span></div>
+            <div class="boxes bb-0 br-0"><span class="boxtext"></span></div>
+         
+        </div>
+    
+
+
+
+        <div class="player">
+            <h1 class="title">My Tic-Tac-Toe</h1>
+            <div class="turnchange">
+                <div class="playerinfo">
+                    <div class="info">Player 1</div>
+                    <div class="info">Player 2</div>
+                    <div class="info">X</div>
+                    <div class="info">O</div>
+                </div>
+
+                <span>Current PlayerTurn</span>
+                <span class="turntext"></span>
+                <button class="button-30" role="button">Reset Board</button>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="win">
+        <span>Congratulations!!!</span>
+        <h1>Player Won!!!!</h1>
+        <button class="button-30">Play Again</button>
+    </div>
+    <div class="draw">
+        <span>OOPSS!!!</span>
+        <h1>Looks like a Draw....Play Again!!</h1>
+        <button class="button-30">Play Again</button>
+    </div>
+    <script src="tictac.js"></script>
+</body>
+
+</html>
